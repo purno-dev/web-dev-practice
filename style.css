@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+:root {
+  /* Backgrounds */
+  --page-bg: #0F172A;
+  --card-bg: #FFFFFF;
+
+  /* Text */
+  --text-primary: #1E293B;
+  --text-secondary: #64748B;
+
+  /* Buttons */
+  --btn-primary: #2563EB;
+  --btn-primary-hover: #1D4ED8;
+
+  /* Outline Button */
+  --btn-outline-border: #CBD5E1;
+  --btn-outline-hover-bg: #F1F5F9;
+
+  /* Skill Tags */
+  --skill-tag-bg: #EFF6FF;
+  --skill-tag-text: #2563EB;
+
+  /* Status */
+  --online-dot: #22C55E;
+
+  /* Borders & Dividers */
+  --stats-divider: #E2E8F0;
+
+  /* Shadow */
+  --card-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+body ,html {
+    font-size: 16px;
+    min-height: 100vh;
+    background-color: antiquewhite;
+    text-decoration: none;
+    overflow-x: none;
+}
+
