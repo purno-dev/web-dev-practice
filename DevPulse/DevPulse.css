@@ -38,8 +38,25 @@
 body ,html {
     font-size: 16px;
     min-height: 100vh;
-    background-color: antiquewhite;
+    
     text-decoration: none;
     overflow-x: none;
 }
 
+.container {
+    background-color: var(--page-bg);
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.head_section {
+    display: grid;
+}
+
+.avatar {
+    max-height: 96px;
+    background-image: url("");
+}
