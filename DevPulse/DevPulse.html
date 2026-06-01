@@ -1,41 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="DevPulse.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevPulse Profile Card</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="DevPulse.css" />
 </head>
 <body>
-    <div class="card">
-        <section class="head-section">
-        <div class="avatar">
-            <div class="online"></div>
-        </div>
-        <h1 class="name">Purno Runjun Shqul</h1>
-        <p class="role">Full Stack Dev</p>
-        <p class="description">"Building bridges between hardware and the web."</p>
-    </section>
-    <section class="content">
-        <div class="skill">
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>JS</p>
-            <p>Python</p>
-            <p>IOT</p>
-        </div>
-        <div class="stats">
-            <p>42+<br>Projects</p>
-            <p>1.2K<br>Followers</p>
-            <p>4.5<br>Rating</p>
+  <article class="card">
+    <header class="top-section">
+      <div class="avatar-wrapper">
+        <div class="avatar" aria-label="Profile picture"></div>
+        <span class="online" aria-label="Online status"></span>
+      </div>
 
-        </div>
-        <div class="cta">
-            <button>Follow</button>
-            <button>Message</button>
-        </div>
+      <div class="profile-info">
+        <h1 class="name">Purno Runjun Shqul</h1>
+        <p class="role">Full Stack Developer</p>
+        <p class="description">Building bridges between hardware and the web.</p>
+      </div>
+    </header>
+
+    <section class="skills-section" aria-label="Skills">
+      <ul class="skill-list">
+        <li>ESP32</li>
+        <li>React</li>
+        <li>IoT</li>
+        <li>Node.js</li>
+      </ul>
     </section>
+
+    <section class="stats" aria-label="Profile stats">
+      <div class="stat-item">
+        <span class="stat-number">42</span>
+        <span class="stat-label">Projects</span>
+      </div>
+
+      <div class="stat-item">
+        <span class="stat-number">1.2K</span>
+        <span class="stat-label">Followers</span>
+      </div>
+
+      <div class="stat-item">
+        <span class="stat-number">4.9</span>
+        <span class="stat-label">Rating</span>
+      </div>
+    </section>
+
+    <div class="cta">
+      <button class="btn btn-primary" type="button">Follow</button>
+      <button class="btn btn-outline" type="button">Message</button>
     </div>
-    
+  </article>
 </body>
 </html>
