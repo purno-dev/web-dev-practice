@@ -5,53 +5,61 @@
     font-family: sans-serif;
 }
 
-body, html {
+body,
+html {
     height: 100%;
     width: 100%;
     font-size: 16px;
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
+
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--page-bg);
+
 }
 
 :root {
-  /* Backgrounds */
-  --page-bg: #0F172A;
-  --card-bg: #FFFFFF;
+    /* Backgrounds */
+    --page-bg: #0F172A;
+    --card-bg: #FFFFFF;
 
-  /* Text */
-  --text-primary: #1E293B;
-  --text-secondary: #64748B;
+    /* Text */
+    --text-primary: #1E293B;
+    --text-secondary: #64748B;
 
-  /* Buttons */
-  --btn-primary: #2563EB;
-  --btn-primary-hover: #1D4ED8;
+    /* Buttons */
+    --btn-primary: #2563EB;
+    --btn-primary-hover: #1D4ED8;
 
-  /* Outline Button */
-  --btn-outline-border: #CBD5E1;
-  --btn-outline-hover-bg: #F1F5F9;
+    /* Outline Button */
+    --btn-outline-border: #CBD5E1;
+    --btn-outline-hover-bg: #F1F5F9;
 
-  /* Skill Tags */
-  --skill-tag-bg: #EFF6FF;
-  --skill-tag-text: #2563EB;
+    /* Skill Tags */
+    --skill-tag-bg: #EFF6FF;
+    --skill-tag-text: #2563EB;
 
-  /* Status */
-  --online-dot: #22C55E;
+    /* Status */
+    --online-dot: #22C55E;
 
-  /* Borders & Dividers */
-  --stats-divider: #E2E8F0;
+    /* Borders & Dividers */
+    --stats-divider: #E2E8F0;
 
-  /* Shadow */
-  --card-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    /* Shadow */
+    --card-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 
 .card {
-    height: 100vh;
-    width: 100%;
-background-color: var(--card-bg);
-padding: 25px;
+    height: auto;
+    width: 80%;
+    background-color: var(--card-bg);
+    padding: 25px;
+    border-radius: 15px;
+
 }
 
 .head-section {
@@ -59,7 +67,7 @@ padding: 25px;
     grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
-    
+
 
 }
 
@@ -71,7 +79,8 @@ padding: 25px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border: 1px solid var();
+    border-radius: 50%;
+    border: 1px solid blue;
 }
 
 .online {
@@ -80,8 +89,8 @@ padding: 25px;
     width: 15px;
     background-color: var(--online-dot);
     border-radius: 50%;
-    top: 10px;
-    left: 4px;
+    bottom: 5px;
+    right: 5px;
     border: 1px solid white;
 }
 
@@ -90,8 +99,8 @@ padding: 25px;
     color: var(--text-secondary);
 }
 
-.role{
-    
+.role {
+
     color: var(--text-primary);
     font-size: 0.8rem;
 }
@@ -104,10 +113,10 @@ padding: 25px;
 .skill {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    flex-direction: row;
     margin: 15px 0px;
     flex-wrap: wrap;
-
+    row-gap: 8px;
 }
 
 .skill p {
@@ -134,7 +143,7 @@ padding: 25px;
     padding: 10px 50px;
     display: flex;
     flex-direction: column;
-    
+
     align-items: center;
     border: 2px solid var(--btn-outline-border);
     border-radius: 5px;
@@ -142,12 +151,13 @@ padding: 25px;
     max-width: 200px;
     background-color: var(--btn-primary);
     color: var(--text-primary);
-    
+
 }
 
 .stats {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 20px;
     align-items: center;
@@ -156,7 +166,16 @@ padding: 25px;
 }
 
 
-button:hover {
+button:hover {}
 
-}
+ @media (width>=768px) {
+    .card {
+        height: auto;
+        width: 100%;
+        max-width: 400px;
+        background-color: var(--card-bg);
+        padding: 25px;
+        border-radius: 15px;
 
+    }
+}  
